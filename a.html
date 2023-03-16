@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let X = [-3,5,1,3,2,10]
+  let first = 0;
+  let last = X.length - 1;
+  document.write('Thứ tự lúc đầu của mảng là ' + X + '<br>')
+  while(first < last){
+    let a = X[first]
+    X[first] = X[last]
+    X[last] = a
+    first++
+    last--
+  }document.write('Thứ tự sau khi đảo chiều của mảng là ' + X )
+</script>
+</body>
+</html>
